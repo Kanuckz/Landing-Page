@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 body{
@@ -13,25 +14,19 @@ nav{
     background-color: #FF3B3F;
     position: fixed;
     display: flex;
-    
-    
-    
+    z-index: 1;    
 }
 
 nav h1{
     color: #fff;
     font-size: 30px;
     font-family: 'Ubuntu Condensed', sans-serif;
-    margin: 7px 0;
-    
+    margin: 10px 0;
 }
 
 .f1{
     padding: 70px 15% 15px;
     background-color: #ef393c;
-    transition: 1900ms;
-    
-        
 }
 
 .inp1{
@@ -55,6 +50,7 @@ nav ul{
     width: 20%;
     margin-left: 38%;
     position: absolute;
+    transition: 2s;
 }
 
 nav ul li{
@@ -65,6 +61,7 @@ nav ul li{
     font-size: 25px;
     font-family: 'Ubuntu Condensed', sans-serif;
     list-style-type: none;
+    transition: 2s;
 }
 
 .cart{
@@ -82,11 +79,6 @@ nav ul li:hover{
     
 }
 
-h2{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    
-}
-
 .subt-1{
     font-size: 40px;
     margin: 5px;
@@ -97,7 +89,7 @@ h2{
 .tvs{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 16%;
     text-align: center;
 }
 
@@ -136,7 +128,7 @@ h2{
 .info{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 16%;
     text-align: center;
 }
 
@@ -172,7 +164,7 @@ h2{
 .cel{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 16%;
     text-align: center;
 }
 
@@ -207,6 +199,7 @@ h2{
     border-radius: 5px;
     border: none;
     margin-left: 31%;
+    font-size: 18px;
 }
 
 .sub{
@@ -227,9 +220,20 @@ h2{
 
 .form2{
     color: white;
-    font-size: 30px;  
+    font-size: 30px; 
+    padding-top: 50px; 
 }
 
 .sub:hover{
     cursor: pointer;
+}
+
+@media(max-width: 800px){
+    nav ul{
+        display: none;
+    }
+
+    .cart{
+        margin-left: 80%;
+    }
 }
